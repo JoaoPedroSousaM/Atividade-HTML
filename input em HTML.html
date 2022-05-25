@@ -1,0 +1,46 @@
+<meta charset="UTC-8">
+
+<p align="center">
+<input/>
+<button><h2>Paisagens aleatórias</h2> Escreva um dia da semana (ex: sábado) para obter alguma imagem aleatória!</button>
+</P>
+
+
+<script>
+    
+    function print(texto){
+        document.write(texto);
+    }
+    var input = document.querySelector("input");
+    var button = document.querySelector("button");
+    input.focus();
+
+    function botao() {
+        if(input.value == "segunda") {
+            print("<p align=center><img src=https://imgur.com/kSuFvBD.jpg></img></P>");
+        } 
+        if (input.value == "terça") {
+            print("<p align=center><img src=https://imgur.com/uQOrVdV.jpg></P></img>");
+        }
+        if (input.value == "quarta") {
+            print("<p align=center><img src=https://imgur.com/2jdTF26.jpg></P></img>");
+        }
+        if (input.value == "quinta") {
+            print("<p align=center><img src=https://imgur.com/nfcfIpk.jpg></P></img>");
+        }
+        if (input.value == "sexta") {
+            print("<p align=center><img src=https://imgur.com/LgUhG03.jpg></P></img>");
+        }
+        if (input.value == "sábado") {
+            print("<p align=center><img src=https://imgur.com/GyVs3d7.jpg></P></img>");
+        }
+        if (input.value == "domingo") {
+            print("<p align=center><img src=https://imgur.com/JknHfUq.jpg></P></img>");
+        }
+        
+    }
+
+    button.onclick = botao;
+        
+        
+</script>
